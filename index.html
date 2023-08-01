@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="start">
+        <h2>Hangman</h2>
+        <img src="/images/hangman.png">
+        <button class="button" id="play">Start Game</button>
+    </div>
+    
+    <div class="game">     
+        <div class="imagen">
+            <img src="/images/0.png">
+        </div>
+      
+        <form class="wordForm">      
+            <p>Enter a letter please.</p>
+            <p class="word"></p>
+            <textarea class="answer" cols="10" rows="1" maxlength="1"></textarea>
+            <button type="submit" class="button">Submit</button>         
+            <p class="usedLetters"></p>
+        </form>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
